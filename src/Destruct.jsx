@@ -5,10 +5,9 @@
         const {model ,year,dealer,color} =props.details
 return(
     <section>
-    <div>{model}</div>
-    <div>{year}</div>
-    <div>{dealer}</div>
-    <div>{color}</div>
+    <div>{name}</div>
+    <div>{city}</div>
+    <div>{state}</div>
     </section>
     )
  }
