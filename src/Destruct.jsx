@@ -2,7 +2,7 @@
 
  const Destruct = (props) => {
     
-        const {model ,year,dealer,color} =props.car
+        const {model ,year,dealer,color} =props.details
 return(
     <section>
     <div>{model}</div>
