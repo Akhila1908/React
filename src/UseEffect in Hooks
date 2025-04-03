@@ -1,0 +1,31 @@
+import React from 'react'
+import {useState,useEffect} from 'react' 
+
+ const Dest = () => {
+    
+        const [city,setCity] = useState("bhimavaram")
+        useEffect(()=>{
+        if(city=="bhimavaram"){
+            setCity("mumbai")
+         } else {
+        setCity("delhi")}
+},[] )
+        return(
+            <h2>Destination: {city}</h2> 
+        ) 
+ }   
+ export default Dest
+
+
+
+=>App.js
+
+import './App.css';
+import Dest from './Dest'
+
+function App() {   
+    return ( 
+        <Dest />
+    )
+}
+export default App
