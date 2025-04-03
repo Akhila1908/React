@@ -1,0 +1,24 @@
+import React from 'react'
+import {useState} from 'react'
+
+ const Dest = () => {
+    
+        const [city,setCity] = useState("bhimavaram")
+        return(
+            <h2>Destination: {city}</h2>
+        )
+ } 
+ export default Dest
+
+
+
+ => App.js
+import './App.css';
+import Dest from './Dest'
+
+function App() {   
+    return ( 
+        <Dest />
+    )
+}
+export default App
