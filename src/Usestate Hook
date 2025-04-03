@@ -1,9 +1,9 @@
 import React from 'react'
-import {useState} from 'react'
+import {useState} from 'react'  // usestate is function and it is used as hook
 
  const Dest = () => {
     
-        const [city,setCity] = useState("bhimavaram")
+        const [city,setCity] = useState("bhimavaram")   // syntax: const[state ,setState]= useState();  state=variable
         return(
             <h2>Destination: {city}</h2>
         )
