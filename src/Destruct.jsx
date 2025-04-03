@@ -13,3 +13,20 @@ return(
     )
  }
  export default Destruct
+
+
+=> App.js
+import './App.css';
+import Dest from './Dest'
+
+const user={
+  name:'sri',
+  city:'bhimavarm',
+  state:'ap'
+}
+function App() {   
+    return ( 
+        <Dest details={user} />
+    )
+}
+export default App
