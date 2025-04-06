@@ -1,0 +1,18 @@
+import React, { useState } from "react"
+let sample=["Apple","mango",35,{name:"akhila"}]
+const Dest =()=>{ 
+  return(  
+   <div> 
+    {sample[0]} {/*we have to pass the index value*/}  
+    {sample.map((item)=>{   
+      return(                     {/*accessing key-value pairs using the map}
+        <div>  
+           {item.name}   
+         </div>  
+      )  
+  })}
+  {sample[3].name}  {/*accessing the key value pairs*/}
+  </div> 
+  )
+}
+export default Dest;
