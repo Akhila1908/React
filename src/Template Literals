@@ -1,0 +1,13 @@
+//passing the variable and statement in a single line
+
+
+import React from "react" 
+function Dest(){
+const course="React JS"
+  return(  
+   <div>  
+   {`I am learniing the ${course}`}
+  </div> 
+  )
+}
+ export default Dest
