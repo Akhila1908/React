@@ -1,0 +1,53 @@
+import React, { useState, useEffect } from 'react';
+ 
+const ClickEvent = () => {
+  const [userName, setUserName] = useState(" ")
+  const getUserName =(event)=>{
+   setUserName(event.target.value)
+  }
+  
+    
+  return (
+    <div>
+      <h2>Hello,{userName}</h2>
+      <div className='input'>
+        <input type="text" placeholder='Enter you name' onChange={getUserName}/>
+        <br />
+        <button className='submitBtn'>Submit</button>
+      </div>
+    </div>
+  ); 
+     };
+
+  export default ClickEvent;
+
+
+
+   =>  using the Submit button
+
+    
+ import React, { useState, useEffect } from 'react';
+ 
+const ClickEvent = () => {
+  const [userDetails, setUserDetails] = useState(" ")
+  const [userName, setUserName] = useState(" ")
+  const getUserName =(event)=>{
+   setUserName(event.target.value)
+  }
+  const User =()=>{
+    setUserDetails(userName)
+   }
+    
+  return (
+    <div>
+      <h2>Hello,{userDetails}</h2>
+      <div className='input'>
+        <input type="text" placeholder='Enter you name' onChange={getUserName}/>
+        <br />
+        <button className='submitBtn' onClick={User}>Submit</button>
+      </div>
+    </div>
+  ); 
+     };
+
+  export default ClickEvent;
